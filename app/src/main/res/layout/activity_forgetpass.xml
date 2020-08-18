@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@android:color/holo_blue_bright">
+
+
+
+<TextView
+    android:id="@+id/txtHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Forgot Password"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:textColor="@android:color/holo_red_dark"/>
+
+<TextView
+    android:id="@+id/txtEmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Email ID : "
+    android:layout_below="@id/txtHeader"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:textColor="@android:color/black"
+    android:textSize="15dp"
+    android:textStyle="bold"/>
+
+<EditText
+    android:id="@+id/edtEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txtHeader"
+    android:layout_marginRight="10dp"
+    android:layout_toRightOf="@id/txtEmail"
+    android:layout_marginLeft="70dp"
+    android:layout_marginTop="30dp"
+    android:inputType="textEmailAddress"/>
+<TextView
+    android:id="@+id/txtSecurityQues"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Security Question : "
+    android:textColor="@android:color/black"
+    android:layout_below="@id/edtEmail"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="40dp"
+    android:textSize="15dp"
+    android:textStyle="bold"/>
+<Spinner
+    android:id="@+id/spinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/edtEmail"
+    android:layout_toRightOf="@id/txtSecurityQues"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="10dp"
+    android:entries="@array/Questions"
+    android:layout_marginTop="35dp">
+</Spinner>
+<TextView
+    android:id="@+id/txtSecurityAns"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Security Answer : "
+    android:textColor="@android:color/black"
+    android:textStyle="bold"
+    android:layout_below="@id/spinner"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:textSize="15dp"/>
+<EditText
+    android:id="@+id/edtSecurityAns"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/spinner"
+    android:layout_toRightOf="@id/txtSecurityAns"
+    android:layout_marginLeft="17dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"/>
+
+<Button
+    android:id="@+id/btnSubmit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Submit"
+    android:layout_marginLeft="80dp"
+    android:layout_marginTop="100dp"
+    android:layout_below="@id/edtSecurityAns"/>
+<Button
+    android:id="@+id/btnCancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Cancel"
+    android:layout_below="@id/edtSecurityAns"
+    android:layout_toRightOf="@id/btnSubmit"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="30dp"/>
+
+
+<TextView
+    android:id="@+id/txtBack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Back to Login"
+    android:layout_below="@id/btnSubmit"
+    android:textSize="20dp"
+    android:layout_marginTop="50dp"
+    android:gravity="center"
+    android:textColor="@color/colorPrimaryDark"
+    android:textStyle="bold"/>
+</RelativeLayout>
+

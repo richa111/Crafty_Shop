@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profileimg"
+        android:src="@mipmap/ic_launcher"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textname"
+        android:layout_above="@+id/txtemail"
+        android:layout_alignParentRight="true"
+        android:textColor="#000"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/profileimg"
+        android:layout_toEndOf="@+id/profileimg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtemail"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@+id/profileimg"
+        android:layout_toRightOf="@+id/profileimg"
+        android:layout_toEndOf="@+id/profileimg"
+        android:layout_marginBottom="24dp" />
+</RelativeLayout>
